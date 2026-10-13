@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100c20">
+<meta name="description" content="ViralWorld_rdm — prépare tes vidéos courtes, organise tes publications et suis tes statistiques TikTok autorisées.">
+<title>ViralWorld_rdm — Creator Studio</title>
+<style>
+:root{color-scheme:dark;--bg:#0c0917;--panel:#151126;--panel2:#1c1732;--line:#30284a;--text:#f7f4ff;--muted:#a9a2c2;--pink:#ff4d9d;--cyan:#65e6e0;--purple:#8c6bff;--green:#7de4b0;--danger:#ff829a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% -10%,#3a1a5d 0,transparent 36%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+button,input,select,textarea{font:inherit}button{cursor:pointer}.shell{max-width:1450px;margin:auto;padding:22px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0 26px}.brand{display:flex;align-items:center;gap:12px}.logo{width:46px;height:46px;border-radius:15px;background:linear-gradient(135deg,var(--pink),var(--purple) 60%,var(--cyan));display:grid;place-items:center;font-weight:950;color:#fff;font-size:23px;box-shadow:0 8px 28px #8c6bff44}.brand h1{font-size:20px;margin:0;letter-spacing:-.7px}.brand p{font-size:12px;color:var(--muted);margin:4px 0 0}.top-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.pill{border:1px solid var(--line);border-radius:99px;padding:8px 12px;color:var(--muted);font-size:12px;display:flex;align-items:center;gap:8px}.dot{width:7px;height:7px;border-radius:50%;background:#e5b75c}.btn{border:0;border-radius:12px;padding:11px 15px;font-weight:750;transition:.2s}.btn:hover{transform:translateY(-1px);filter:brightness(1.08)}.primary{color:#fff;background:linear-gradient(110deg,#fa438f,#865eff)}.secondary{color:var(--text);background:#28213e;border:1px solid var(--line)}.small{padding:8px 11px;font-size:12px}.hero{display:grid;grid-template-columns:1.35fr .65fr;gap:18px;margin-bottom:18px}.hero-card{border:1px solid var(--line);border-radius:24px;padding:28px;background:linear-gradient(125deg,#24163e,#171126 68%);position:relative;overflow:hidden}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--cyan);font-weight:800}.hero h2{font-size:clamp(27px,4vw,43px);letter-spacing:-1.8px;line-height:1.06;margin:14px 0 12px;max-width:700px}.hero h2 span{background:linear-gradient(90deg,var(--pink),#c2a7ff,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:640px;color:var(--muted);line-height:1.65;font-size:14px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.orb{position:absolute;width:240px;height:240px;right:-48px;top:-62px;border-radius:50%;border:1px solid #a17cff2c;box-shadow:0 0 0 30px #a17cff0b,0 0 0 62px #a17cff08;pointer-events:none}.side-card{border:1px solid var(--line);border-radius:24px;padding:22px;background:linear-gradient(160deg,#1a1730,#12101f);display:flex;flex-direction:column;justify-content:space-between}.side-card h3{margin:0 0 8px;font-size:16px}.side-card p{color:var(--muted);font-size:12px;line-height:1.6;margin:0}.connect-state{margin-top:20px;border:1px solid var(--line);border-radius:15px;padding:14px;background:#100d1e}.state-line{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:750}.state-icon{width:33px;height:33px;border-radius:10px;display:grid;place-items:center;background:#2a2240}.state-copy{color:var(--muted);font-size:11px;margin:9px 0 0 43px;line-height:1.5}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}.stat{padding:17px;border-radius:17px;border:1px solid var(--line);background:linear-gradient(145deg,#19142a,#120f20)}.stat-top{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.stat-icon{color:var(--cyan);font-size:17px}.stat strong{display:block;font-size:26px;letter-spacing:-1px;margin:12px 0 4px}.stat small{color:var(--muted);font-size:11px}.layout{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(330px,.88fr);gap:18px}.panel{border:1px solid var(--line);background:linear-gradient(150deg,#171326,#110e1e);border-radius:22px;padding:22px;margin-bottom:18px;min-width:0}.panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:20px}.panel-head h3{margin:0;font-size:17px;letter-spacing:-.3px}.panel-head p{color:var(--muted);font-size:12px;margin:6px 0 0;line-height:1.5}.tag{border:1px solid #4d3b71;color:#c8b8ff;border-radius:8px;padding:6px 9px;font-size:10px;white-space:nowrap}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;color:#d9d3ec;font-weight:700}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#0e0b19;color:var(--text);border-radius:11px;padding:12px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#8c6bff;box-shadow:0 0 0 3px #8c6bff22}.field textarea{min-height:84px;resize:vertical}.hint{font-size:10px;color:var(--muted);line-height:1.45}.generate{width:100%;margin-top:17px;padding:14px}.output{display:none;margin-top:18px}.output.show{display:block}.output-block{border:1px solid var(--line);background:#100d1d;border-radius:13px;padding:14px;margin-top:10px}.output-block h4{margin:0 0 10px;font-size:12px;color:var(--cyan)}.output-block p{font-size:13px;line-height:1.6;margin:0;white-space:pre-wrap;overflow-wrap:anywhere}.output-block .btn{margin-top:10px}.hashes{display:flex;flex-wrap:wrap;gap:7px}.hash{background:#2a1d43;color:#e3d6ff;padding:7px 9px;border-radius:8px;font-size:11px}.score-row{display:flex;align-items:center;gap:14px}.score-ring{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--cyan) 0 72%,#302742 72% 100%);position:relative;flex-shrink:0}.score-ring:before{content:"";position:absolute;inset:6px;background:#151126;border-radius:50%}.score-ring span{position:relative;font-weight:850}.score-copy b{font-size:13px}.score-copy p{margin:5px 0 0;color:var(--muted);font-size:11px;line-height:1.5}.checklist{display:grid;gap:10px}.checkrow{display:flex;align-items:flex-start;gap:10px;padding:11px 0;border-bottom:1px solid #29233c;font-size:12px;line-height:1.5}.checkrow:last-child{border:0}.checkrow input{accent-color:var(--pink);margin-top:3px}.checkrow span{color:var(--muted)}.video-list{display:grid;gap:10px}.video-item{display:flex;align-items:center;gap:12px;padding:12px;border:1px solid var(--line);border-radius:13px;background:#100d1d}.thumb{width:48px;height:58px;border-radius:9px;background:linear-gradient(150deg,#45245b,#22213d,#125254);display:grid;place-items:center;font-size:18px;flex-shrink:0}.video-meta{min-width:0;flex:1}.video-meta b{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.video-meta small{display:block;color:var(--muted);font-size:10px;margin-top:6px}.video-count{font-size:11px;color:var(--cyan);white-space:nowrap}.empty{border:1px dashed #3b3153;border-radius:14px;padding:25px 15px;text-align:center;color:var(--muted);font-size:12px;line-height:1.7}.empty b{display:block;color:var(--text);margin-bottom:5px}.footer{text-align:center;color:#77718e;font-size:10px;padding:10px 0 28px;line-height:1.7}.notice{border:1px solid #55432b;background:#241b12;color:#e8d1a4;border-radius:12px;padding:12px;font-size:11px;line-height:1.6;margin-top:12px}.success{border-color:#285a4d;background:#11251f;color:#a8f0d1}.error{border-color:#633346;background:#29121e;color:#ffb8c5}.profile{display:flex;align-items:center;gap:10px}.avatar{width:34px;height:34px;border-radius:50%;object-fit:cover;background:#2a2240}.hidden{display:none!important}
+@media(max-width:900px){.hero,.layout{grid-template-columns:1fr}.side-card{min-height:190px}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.shell{padding:14px}.topbar{align-items:flex-start}.brand h1{font-size:17px}.brand p{font-size:10px}.top-actions{justify-content:flex-end}.pill{display:none}.hero-card{padding:23px}.hero h2{font-size:31px}.panel{padding:17px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.stats{gap:8px}.stat{padding:13px}.stat strong{font-size:22px}.panel-head{margin-bottom:15px}.video-count{font-size:10px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="topbar">
+  <div class="brand"><div class="logo">V</div><div><h1>ViralWorld<span style="color:var(--pink)">_rdm</span></h1><p>CREATOR STUDIO · BUILD YOUR MOMENT</p></div></div>
+  <div class="top-actions"><div class="pill"><span class="dot" id="statusDot"></span><span id="statusText">Mode démo</span></div><button class="btn secondary small" id="connectTop">↗ Connecter TikTok</button></div>
+</header>
+<section class="hero">
+  <div class="hero-card"><div class="orb"></div><div class="eyebrow">✦ Ton prochain post commence ici</div><h2>Crée mieux.<br><span>Publie plus malin.</span></h2><p>Prépare tes accroches, organise tes hashtags et analyse les performances de tes vidéos. Un studio de création pensé pour les artistes et créateurs qui veulent toucher un public plus large.</p><div class="hero-actions"><button class="btn primary" id="goCreate">✦ Préparer une vidéo</button><button class="btn secondary" id="goVideos">▤ Mes vidéos TikTok</button></div></div>
+  <div class="side-card"><div><h3>Ton espace créateur</h3><p>Connecte ton compte pour afficher les informations que TikTok autorise ton application à consulter.</p></div><div class="connect-state"><div class="state-line"><div class="state-icon">♪</div><span id="connectTitle">TikTok non connecté</span></div><p class="state-copy" id="connectDescription">La connexion réelle s'active après la configuration et l'approbation de l'application développeur.</p><button class="btn primary small" style="width:100%;margin-top:13px" id="connectMain">Connecter mon compte</button></div></div>
+</section>
+<section class="stats">
+  <div class="stat"><div class="stat-top"><span>Vidéos chargées</span><span class="stat-icon">▣</span></div><strong id="statVideos">—</strong><small id="statVideosNote">En attente de connexion</small></div>
+  <div class="stat"><div class="stat-top"><span>Vues cumulées</span><span class="stat-icon">◉</span></div><strong id="statViews">—</strong><small>Données disponibles via l'API</small></div>
+  <div class="stat"><div class="stat-top"><span>Likes cumulés</span><span class="stat-icon">♡</span></div><strong id="statLikes">—</strong><small>Données disponibles via l'API</small></div>
+  <div class="stat"><div class="stat-top"><span>Partages cumulés</span><span class="stat-icon">↗</span></div><strong id="statShares">—</strong><small>Données disponibles via l'API</small></div>
+</section>
+<div class="layout">
+  <main>
+    <section class="panel" id="creatorPanel">
+      <div class="panel-head"><div><h3>Préparer ma vidéo</h3><p>Génère une proposition de publication adaptée à ton public.</p></div><span class="tag">STUDIO DE CRÉATION</span></div>
+      <form id="ideaForm"><div class="form-grid">
+        <div class="field full"><label for="topic">Sujet ou idée de la vidéo *</label><textarea id="topic" required placeholder="Ex. : extrait de mon nouveau morceau, histoire derrière le son, freestyle dans la rue…"></textarea><span class="hint">Plus tu décris le contenu, plus les suggestions locales seront pertinentes.</span></div>
+        <div class="field"><label for="platform">Plateforme</label><select id="platform"><option>TikTok</option><option>Instagram Reels</option><option>YouTube Shorts</option></select></div>
+        <div class="field"><label for="genre">Style de contenu</label><select id="genre"><option value="music">Musique / artiste</option><option value="comedy">Humour</option><option value="dance">Danse</option><option value="story">Storytime</option><option value="education">Éducation / conseils</option><option value="lifestyle">Lifestyle</option><option value="other">Autre</option></select></div>
+        <div class="field"><label for="country">Public visé</label><select id="country"><option value="global">International</option><option value="burkina">Burkina Faso</option><option value="france">France</option><option value="westafrica">Afrique de l'Ouest</option><option value="usa">États-Unis</option><option value="canada">Canada</option><option value="uk">Royaume-Uni</option></select></div>
+        <div class="field"><label for="language">Langue de la vidéo</label><select id="language"><option value="fr">Français</option><option value="en">Anglais</option><option value="mix">Français + anglais</option><option value="local">Langue locale</option></select></div>
+        <div class="field"><label for="duration">Durée prévue</label><select id="duration"><option value="short">Moins de 15 secondes</option><option value="mid" selected>15 à 30 secondes</option><option value="long">30 à 60 secondes</option><option value="story">Plus de 60 secondes</option></select></div>
+        <div class="field"><label for="goal">Objectif principal</label><select id="goal"><option value="reach">Toucher de nouvelles personnes</option><option value="engage">Obtenir des commentaires</option><option value="followers">Développer la communauté</option><option value="stream">Faire écouter un morceau</option></select></div>
+        <div class="field full"><label for="caption">Légende actuelle (facultatif)</label><input id="caption" placeholder="Colle ta légende si tu en as déjà une"></div>
+      </div><button class="btn primary generate" type="submit">✦ Générer mon plan de publication</button></form>
+      <div class="output" id="output" aria-live="polite"></div>
+    </section>
+    <section class="panel" id="videosPanel"><div class="panel-head"><div><h3>Mes vidéos TikTok</h3><p>Les données apparaîtront après connexion et autorisation des accès.</p></div><button class="btn secondary small" id="refreshVideos">↻ Actualiser</button></div><div class="video-list" id="videoList"><div class="empty"><b>♪ Ton contenu apparaîtra ici</b>Connecte TikTok pour demander les vidéos accessibles via l'API officielle.</div></div><div id="videoNotice" class="notice hidden"></div></section>
+  </main>
+  <aside>
+    <section class="panel"><div class="panel-head"><div><h3>Checklist avant publication</h3><p>Les détails qui aident une vidéo à bien démarrer.</p></div><span class="tag">CHECKLIST</span></div>
+      <div class="checklist" id="checklist">
+        <label class="checkrow"><input type="checkbox"><span>Les 2 premières secondes donnent envie de rester.</span></label>
+        <label class="checkrow"><input type="checkbox"><span>Le son et la voix sont clairs sur téléphone.</span></label>
+        <label class="checkrow"><input type="checkbox"><span>Le texte à l'écran est lisible et sans fautes.</span></label>
+        <label class="checkrow"><input type="checkbox"><span>La légende correspond vraiment au contenu.</span></label>
+        <label class="checkrow"><input type="checkbox"><span>J'ai choisi quelques hashtags pertinents, sans spam.</span></label>
+        <label class="checkrow"><input type="checkbox"><span>J'ai le droit d'utiliser la musique et les images.</span></label>
+        <label class="checkrow"><input type="checkbox"><span>La fin invite naturellement à commenter ou partager.</span></label>
+      </div><div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px"><span class="hint" id="checkCount">0 sur 7 vérifiés</span><button class="btn secondary small" id="resetCheck">Réinitialiser</button></div>
+    </section>
+    <section class="panel"><div class="panel-head"><div><h3>Ce que signifie le score</h3><p>Une aide éditoriale, pas une prédiction de viralité.</p></div></div><div class="score-row"><div class="score-ring"><span>72</span></div><div class="score-copy"><b>Qualité de préparation</b><p>Le score de démo ne mesure pas les chances réelles d'être recommandé. Aucune application ne peut garantir les vues, likes ou abonnés.</p></div></div></section>
+    <section class="panel"><div class="panel-head"><div><h3>Historique local</h3><p>Les plans enregistrés dans ce navigateur.</p></div><button class="btn secondary small" id="clearHistory">Vider</button></div><div id="historyList" class="video-list"><div class="empty">Tes plans enregistrés apparaîtront ici.</div></div></section>
+  </aside>
+</div>
+<footer class="footer">ViralWorld_rdm est un outil indépendant, non affilié à TikTok. La connexion dépend des autorisations et validations de TikTok.<br>Pas de faux likes, de vues artificielles ni de garantie de viralité. Les suggestions sont générées localement, sans IA distante. <a href="/privacy.html" style="color:#c8b8ff">Confidentialité</a> · <a href="/terms.html" style="color:#c8b8ff">Conditions</a></footer>
+</div>
+<script>
+const $ = (id) => document.getElementById(id);
+let currentVideos = [];
+let planHistory = [];
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt = n => Number(n || 0).toLocaleString("fr-FR");
+function openConnect(){ window.location.href="/auth/tiktok"; }
+$("connectTop").addEventListener("click",openConnect);
+$("connectMain").addEventListener("click",openConnect);
+$("goCreate").addEventListener("click",()=>$("creatorPanel").scrollIntoView({behavior:"smooth"}));
+$("goVideos").addEventListener("click",()=>$("videosPanel").scrollIntoView({behavior:"smooth"}));
+async function refreshStatus(){
+ try{
+  const r=await fetch("/api/status"); const s=await r.json();
+  if(s.connected){$("statusDot").style.background="var(--green)";$("statusText").textContent="TikTok connecté";$("connectTitle").textContent="Compte TikTok connecté";$("connectDescription").textContent="Tu as autorisé l'accès de base au profil et à la liste de vidéos.";$("connectMain").textContent="Compte connecté · recharger";$("connectMain").onclick=loadTikTok;}
+  else if(s.configured){$("statusDot").style.background="#e5b75c";$("statusText").textContent="Prêt à connecter";}
+ }catch(e){$("statusText").textContent="Mode aperçu";}
+}
+function makePlan(){
+ const topic=$("topic").value.trim(), platform=$("platform").value, genre=$("genre").value,country=$("country").value,language=$("language").value,duration=$("duration").value,goal=$("goal").value,oldCaption=$("caption").value.trim();
+ const hooks={
+  music:["« J’ai mis cette émotion dans un morceau… écoute la suite. »","« Si tu as déjà vécu ça, ce son est pour toi. »","« Attends le passage qui m’a donné envie de sortir ce titre. »"],
+  comedy:["« Dis-moi que ça t’est déjà arrivé sans me le dire… »","« Le moment où tout part de travers… »"],
+  dance:["« Tu connais ce pas ? Regarde jusqu’à la fin. »","« J’ai essayé ce challenge à ma façon. »"],
+  story:["« Je ne pensais pas que cette journée allait finir comme ça… »","« Voilà ce que j’aurais aimé savoir avant. »"],
+  education:["« Voici une astuce simple que j’aurais aimé connaître plus tôt. »","« En moins de 30 secondes, voilà l’essentiel. »"],
+  lifestyle:["« Une petite partie de ma journée que je voulais partager. »","« Voici les coulisses que vous ne voyez pas. »"],
+  other:["« Regarde ça jusqu’à la fin et dis-moi ce que tu en penses. »","« J’ai testé quelque chose, voici le résultat. »"]
+ };
+ let hook=hooks[genre][Math.floor(Math.random()*hooks[genre].length)];
+ if(goal==="engage") hook="« Tu es d’accord ou pas ? Dis-moi pourquoi en commentaire. »";
+ if(goal==="stream") hook="« Écoute ce passage et dis-moi ce que tu ressens. »";
+ const tags={
+  music:["#NewMusic","#MusicTok","#ArtisteIndependant","#NouveauSon"],
+  comedy:["#Humour","#ComedyTok","#PourToi","#FYP"],
+  dance:["#DanceTok","#DanceChallenge","#PourToi","#FYP"],
+  story:["#Storytime","#HistoireVraie","#PourToi","#FYP"],
+  education:["#Apprendre","#Conseils","#EduTok","#PourToi"],
+  lifestyle:["#Lifestyle","#DailyVlog","#Creator","#PourToi"],
+  other:["#Createur","#VideoDuJour","#PourToi","#FYP"]
+ };
+ let target=({global:"Choisis une langue compréhensible par le public visé, ajoute des sous-titres et publie à des horaires où tes propres abonnés sont actifs.",burkina:"Teste d’abord les horaires où ton public au Burkina est actif et garde les références locales naturelles.",france:"Utilise des références et expressions naturelles pour le public francophone en France.",westafrica:"Des sous-titres clairs et des références partagées en Afrique de l’Ouest peuvent faciliter la compréhension entre pays.",usa:"Si tu vises un public anglophone, prépare une accroche et des sous-titres en anglais naturel.",canada:"Précise si tu vises un public francophone ou anglophone et adapte les sous-titres.",uk:"Prépare une version anglaise naturelle et teste-la auprès de ton public réel."})[country];
+ const lang=({fr:"français",en:"anglais",mix:"français + anglais",local:"langue locale"})[language];
+ const dur=({short:"Une seule idée forte, montrée immédiatement.",mid:"Accroche, développement rapide, puis conclusion ou invitation à réagir.",long:"Garde un rythme régulier, supprime les longueurs et relance l’attention au fil de la vidéo.",story:"Structure l’histoire en étapes claires et donne une raison de rester jusqu’à la conclusion."})[duration];
+ const caption=oldCaption||`${hook}\n\n${topic}\n\nTu en penses quoi ?`;
+ const hashtags=tags[genre].slice(0,4);
+ const output=$("output");
+ output.innerHTML=`<div class="output-block"><h4>01 · ACCROCHE PROPOSÉE</h4><p>${esc(hook)}</p><button class="btn secondary small" data-copy="${esc(hook)}">Copier l'accroche</button></div>
+ <div class="output-block"><h4>02 · PLAN DE LA VIDÉO</h4><p>• Début : ${esc(hook)}\n• Contenu : ${esc(topic)}\n• Rythme : ${esc(dur)}\n• Langue : ${esc(lang)}\n• Fin : termine par une question simple ou une invitation naturelle à écouter / partager.</p></div>
+ <div class="output-block"><h4>03 · HASHTAGS À TESTER</h4><div class="hashes">${hashtags.map(h=>`<span class="hash">${esc(h)}</span>`).join("")}</div><p style="margin-top:10px;color:var(--muted);font-size:11px">Sélection de départ, pas une liste de tendances en temps réel. Garde uniquement les tags qui décrivent vraiment la vidéo.</p><button class="btn secondary small" data-copy="${esc(hashtags.join(" "))}">Copier les hashtags</button></div>
+ <div class="output-block"><h4>04 · LÉGENDE SUGGÉRÉE</h4><p>${esc(caption)}</p><button class="btn secondary small" data-copy="${esc(caption)}">Copier la légende</button></div>
+ <div class="output-block"><h4>05 · ADAPTATION DU PUBLIC</h4><p>${esc(target)}</p></div>
+ <div class="notice">Score éditorial indicatif : ${Math.min(94,58+Math.min(20,topic.length/8|0)+(oldCaption?8:0))}/100. Il évalue seulement la préparation du contenu, jamais une probabilité de viralité.</div>
+ <button class="btn primary small" id="savePlan" style="margin-top:12px">＋ Enregistrer ce plan</button>`;
+ output.classList.add("show");
+ output.querySelectorAll("[data-copy]").forEach(b=>b.addEventListener("click",()=>copyText(b.dataset.copy,b)));
+ $("savePlan").addEventListener("click",()=>{planHistory.unshift({topic,platform,hook,caption,hashtags:hashtags.join(" "),date:new Date().toLocaleString("fr-FR")});renderHistory();$("savePlan").textContent="✓ Plan enregistré";});
+}
+$("ideaForm").addEventListener("submit",e=>{e.preventDefault();makePlan();});
+async function copyText(text,btn){
+ try{await navigator.clipboard.writeText(text);const old=btn.textContent;btn.textContent="Copié ✓";setTimeout(()=>btn.textContent=old,1400);}
+ catch(e){const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();btn.textContent="Copié ✓";}
+}
+function renderHistory(){
+ const el=$("historyList");
+ if(!planHistory.length){el.innerHTML='<div class="empty">Tes plans enregistrés apparaîtront ici.</div>';return;}
+ el.innerHTML=planHistory.slice(0,8).map((h,i)=>`<div class="video-item"><div class="thumb">✦</div><div class="video-meta"><b>${esc(h.topic.slice(0,52))}</b><small>${esc(h.platform)} · ${esc(h.date)}</small><small>${esc(h.hashtags)}</small></div><button class="btn secondary small" data-remove="${i}">×</button></div>`).join("");
+ el.querySelectorAll("[data-remove]").forEach(b=>b.addEventListener("click",()=>{planHistory.splice(Number(b.dataset.remove),1);renderHistory();}));
+}
+$("clearHistory").addEventListener("click",()=>{planHistory=[];renderHistory();});
+function updateCheck(){const boxes=[...$("checklist").querySelectorAll("input")];const n=boxes.filter(b=>b.checked).length;$("checkCount").textContent=`${n} sur ${boxes.length} vérifiés`;}
+$("checklist").addEventListener("change",updateCheck);
+$("resetCheck").addEventListener("click",()=>{$("checklist").querySelectorAll("input").forEach(b=>b.checked=false);updateCheck();});
+async function loadTikTok(){
+ const list=$("videoList"), note=$("videoNotice");
+ list.innerHTML='<div class="empty">Chargement des données TikTok…</div>';note.classList.add("hidden");
+ try{
+  const [profileRes, videosRes]=await Promise.all([fetch("/api/tiktok/me"),fetch("/api/tiktok/videos")]);
+  if(profileRes.status===401||videosRes.status===401){list.innerHTML='<div class="empty">Reconnecte ton compte TikTok pour afficher les vidéos autorisées.</div>';return;}
+  const profile=await profileRes.json(), payload=await videosRes.json();
+  if(!videosRes.ok)throw new Error(payload.message||"Impossible de charger les vidéos.");
+  currentVideos=payload.videos||[];
+  const total=(key)=>currentVideos.reduce((s,v)=>s+Number(v[key]||0),0);
+  $("statVideos").textContent=fmt(currentVideos.length);$("statVideosNote").textContent=profile.display_name?`Compte : ${profile.display_name}`:"Compte connecté";
+  $("statViews").textContent=fmt(total("view_count"));$("statLikes").textContent=fmt(total("like_count"));$("statShares").textContent=fmt(total("share_count"));
+  if(!currentVideos.length){list.innerHTML='<div class="empty"><b>Aucune vidéo renvoyée</b>Vérifie que ton compte a publié des vidéos et que les scopes requis sont accordés.</div>';return;}
+  list.innerHTML=currentVideos.map(v=>`<div class="video-item">${v.cover_image_url?`<img class="thumb" src="${esc(v.cover_image_url)}" alt="" loading="lazy">`:'<div class="thumb">♪</div>'}<div class="video-meta"><b>${esc(v.title||v.video_description||"Vidéo TikTok")}</b><small>♡ ${fmt(v.like_count)} likes · ◉ ${fmt(v.view_count)} vues</small></div>${v.share_url?`<a class="btn secondary small" href="${esc(v.share_url)}" target="_blank" rel="noopener">Voir ↗</a>`:""}</div>`).join("");
+  if(profile.display_name){$("connectTitle").textContent=`Connecté : ${profile.display_name}`;$("connectDescription").textContent="Profil et vidéos chargés via les accès autorisés.";}
+ }catch(e){list.innerHTML='<div class="empty"><b>Les données n’ont pas pu être chargées</b>Vérifie les autorisations accordées à l’application et réessaie.</div>';note.textContent=e.message;note.classList.remove("hidden");note.classList.add("error");}
+}
+$("refreshVideos").addEventListener("click",loadTikTok);
+(async()=>{await refreshStatus();const params=new URLSearchParams(location.search);if(params.get("tiktok")==="connected"){await loadTikTok();history.replaceState({},document.title,"/");}})();
+</script>
+</body>
+</html>
