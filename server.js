@@ -36,7 +36,7 @@ if (pgPool) {
   sessionConfig.store = new PgSession({ pool: pgPool, createTableIfMissing: true, tableName: "user_sessions" });
 }
 app.use(session(sessionConfig));
-app.use(express.static(path.join(__dirname, "public")));
+app.get("*", (_req, res) => res.sendFile(path.join(__dirname, "index.html")));
 
 function configured() {
   return CLIENT_KEY && CLIENT_SECRET && REDIRECT_URI &&
